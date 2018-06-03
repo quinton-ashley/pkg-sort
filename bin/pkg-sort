@@ -1,16 +1,7 @@
 #!/usr/bin/env node
 
-let args = process.argv.slice(2, 3);
-let spaces = args && parseInt(args[0], 10) || 2;
-
-let fs = require('fs');
-
-let pkgSort = require('..');
-
-let filename = './package.json';
-let pkg = JSON.parse(fs.readFileSync(filename));
-let pkgSorted = pkgSort(pkg);
-
-let str = JSON.stringify(pkgSorted, null, spaces);
-
-fs.createWriteStream(filename).end(str);
+let projDir = process.argv.slice(2, 3)[0];
+if (!projDir) {
+  projDir = '.';
+}
+require('..')(projDir);

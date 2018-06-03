@@ -24,7 +24,7 @@
   "scripts": {
     "start": "node bin/pkg-sort",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "git add .",
+    "version": "git add -A",
     "postversion": "git push && git push --tags && npm publish"
   },
   "version": "1.0.4"

@@ -2,13 +2,13 @@
 
 Alphabetize your package.json
 
-## Installation
+### Installation
 
 ```javascript
 npm install -g pkg-sort
 ```
 
-## Usage
+### Usage
 
 Run this from a directory with a `package.json` file:
 
@@ -16,10 +16,17 @@ Run this from a directory with a `package.json` file:
 pkg-sort
 ```
 
-## Credit
+### Credit
 
 <https://github.com/davidguttman/cdo-package>
 
-## License
+### License
 
 MIT
+
+### Donate!
+
+Ethereum: 0xb4355179da353f1BA4AA0BB5a7E3Ba4FdC7128ea  
+Bitcoin: 1LJkyU5jdZb525sBwcx1dA2qV8kgowdcro  
+Patreon: <https://www.patreon.com/qashto>  
+Paypal: <https://www.paypal.me/qashto/5>
