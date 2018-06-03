@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
-var args = process.argv.slice(2,3)
-var spaces = args && parseInt(args[0], 10) || 2
+let args = process.argv.slice(2, 3);
+let spaces = args && parseInt(args[0], 10) || 2;
 
-var fs = require('fs')
+let fs = require('fs');
 
-var cdo = require('..')
+let pkgSort = require('..');
 
-var filename = './package.json'
-var pkg = JSON.parse(fs.readFileSync(filename))
-var pkgSorted = cdo(pkg)
+let filename = './package.json';
+let pkg = JSON.parse(fs.readFileSync(filename));
+let pkgSorted = pkgSort(pkg);
 
-var str = JSON.stringify(pkgSorted, null, spaces)
+let str = JSON.stringify(pkgSorted, null, spaces);
 
-fs.createWriteStream(filename).end(str)
+fs.createWriteStream(filename).end(str);
