@@ -2,13 +2,11 @@
 
 Alphabetize your package.json
 
-### Installation
+### CLI Installation and Usage
 
 ```javascript
 npm install -g pkg-sort
 ```
-
-### Usage
 
 Run this from a directory with a `package.json` file:
 
@@ -16,13 +14,21 @@ Run this from a directory with a `package.json` file:
 pkg-sort
 ```
 
+or specify the project directory in the first arg
+
+```javascript
+pkg-sort path/to/dir
+```
+
+### node.js Usage
+
+```javascript
+require('pkg-sort')('/your/project/dir');
+```
+
 ### Credit
 
-<https://github.com/davidguttman/cdo-package>
-
-### License
-
-MIT
+Inspired by [cdo-pacakge](https://github.com/davidguttman/cdo-package)
 
 ### Donate!
 
