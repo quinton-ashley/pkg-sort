@@ -10,6 +10,7 @@
   },
   "homepage": "https://github.com/quinton-ashley/pkg-sort",
   "keywords": [
+    "cli",
     "package.json",
     "sort-package"
   ],
@@ -18,13 +19,13 @@
   "name": "pkg-sort",
   "repository": {
     "type": "git",
-    "url": "git://github.com/davidguttman/cdo-package.git"
+    "url": "git+https://github.com/davidguttman/cdo-package.git"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node bin/pkg-sort",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "git add -A",
+    "version": "git add .",
     "postversion": "git push && git push --tags && npm publish"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
